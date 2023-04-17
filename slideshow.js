@@ -1,6 +1,6 @@
 const slideshow = document.querySelector('.slideshow');
-const images = ['Images/Slideshow/1.png', 'Images/Slideshow/1.5.png', 'Images/Slideshow/2.jpg', 'Images/Slideshow/3.png', 'Images/Slideshow/4.jpg', 'Images/Slideshow/5.jpg',
-'Images/Slideshow/6.png', 'Images/Slideshow/7.png', 'Images/Slideshow/8.png', 'Images/Slideshow/9.png'];
+const images = ['Images/Slideshow/1.png', 'Images/Slideshow/1.5.png', 'Images/Slideshow/2.jpg', 'Images/Slideshow/3.jpg', 'Images/Slideshow/4.jpg', 'Images/Slideshow/5.jpg',
+'Images/Slideshow/6.jpg', 'Images/Slideshow/7.jpg', 'Images/Slideshow/8.jpg', 'Images/Slideshow/9.jpg'];
 
 const captions = ['An unused website design created for Royal Holloway\'s Computing Society.',
 'A design for the mobile version of the website.',
