@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="Style/style.css">
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">  
     <link rel="icon" href="Images/Favicon/Icon.png" >
+    <style>body { font-size: 18px; } p {width: 50%; max-width: 50%; text-align: left;  padding-left: 25%;} </style>
   </head>
   <body>
     <header>
@@ -22,28 +23,67 @@
     </header>
     <main> 
 
-        <h2>Self Play with Unity ML-Agents</h2>
+        <h2>Feline Frenzy (Unity + ML-Agents Game)</h2>
 
         <div class="slideshow" style="height: fit-content;">
-            <img src="Images/Screenshots/FelineFrenzy.png" style="border-radius: 10px;"">
+            <img src="Images/Screenshots/FelineFrenzy.png" style="border-radius: 10px;">
         </div>
 
         <div class="skill-container" style="justify-content: center;">
-          <div class="programming-skill">C#</div>
-          <div class="app-skill">Unity</div>
-          <div class="skill">Reinforcement Learning</div>
-          <div class="programming-skill">Python</div>
-          <div class="app-skill">Photoshop</div>
-          <div class="app-skill">Blender</div>
-          <a href="https://youtu.be/X2arJI-O7V8" target="_blank"><div class="programming-skill">Video</div></a>
+          <div class="programming-skill" style="font-size: 16px;">C#</div>
+          <div class="app-skill"style="font-size: 16px;">Unity</div>
+          <div class="skill"style="font-size: 16px;">Reinforcement Learning</div>
+          <div class="programming-skill"style="font-size: 16px;">Python</div>
+          <div class="app-skill"style="font-size: 16px;">Photoshop</div>
+          <div class="app-skill"style="font-size: 16px;">Blender</div>
         </div>
     
 
-        <p> A Unity game designed for my final year university project. The game contains an agent which has been trained through self-play to defeat the player by strategically placing units on tiles.</p>
+        <h3>Software Design</h3>
+        <p>
 
+        The codebase was created entirely within C# and used external Python Machine Learning scripts within ML-Agents to train the AI agents.
+
+        Some of the software design patterns I used to ensure quality and mainability, whilst also optimising game performance, were:
+        <ul style="text-align: left; padding-left: 28%;">
+            <li>Flyweight</li>
+            <li>Publish/ Subscribe  </li>
+            <li>Object Pooling  </li>
+            <li>Service </li>
+            <li>Factory </li>
+            <li>Visitor </li>
+            <li>Singleton </li>
+            <li>State </li>
+            <li>Observer  </li>
+            <li>Command  </li>
+        </ul><br>
+        <iframe width="720 " height="405"  src="https://www.youtube.com/embed/X2arJI-O7V8?si=sBoDmgSkPDsTY6ye" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </p>
+
+      <h3>Machine Learning</h3>
+      <p> During prototyping several deep learning techniques were experimented with, which included: </p>
+      <ul style="text-align: left; padding-left: 28%;">
+        <li>Reinforcement Learning, </li>
+        <li>Imitation Learning, </li>
+        <li>And Generative Adversarial Imitation Learning (GAIL) </li>
+      </ul>
+
+      <p>For the final product I settled on using Self-Play for training, which is in the category of deep reinforcement learning techniques.</p>
+
+      <p>The agent's observations consisted of its observations of its environment, specifically which tiles were free and which units were on the claimed tiles. These observations were then passed into the Neural Network which returned an action to perform to maximise the agent's chance of winning the match.</p>
+
+     <h3>Visuals</h3>
+     <p>All visuals, including characters and the Graphical User Interface, were created within Blender and Photoshop. <br><br></p>
+
+     <p>Five character models were created in total, with each one representing a different unit:<br></p>
+
+      <div class="slideshow" style="height: fit-content;">
+        <img src="Images/Screenshots/FFLineup.png" style="border-radius: 10px;"">
+      </div> <br>
+
+      <p>These models were exported as FBX models from Blender and imported into Unity where their materials were altered to be compatible with the Universal Render Pipeline (URP). The environment models were also created in Blender, with its textures being created in Photoshop, and then exported to Unity. </p>
 
 </main>
-
 <footer>
 <p>&copy; 2024 Amber Abuah</p>
 </footer>
